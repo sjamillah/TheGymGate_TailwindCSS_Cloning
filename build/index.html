@@ -18,13 +18,72 @@
     <header></header>
 
     <main class="grid grid-cols-1 md:gap-4">
+        <!-- Second section -->
+        <section class="p-10">
+            <div class="flex flex-col md:flex-col
+            lg:flex-row gap-4 justify-between align-stretch">
+                <!-- Card -->
+                <div class="flex flex-col md:flex-row lg:flex-col gap-4">
+                    <div class="md:w-1/2 lg:w-4/5">
+                        <img src="image/news1.png" alt="news1" class="w-full">
+                    </div>
+                    <article class="md:w-1/2 lg:w-2/3">
+                        <div class="flex flex-col gap-4">
+                            <div id="content">
+                                <h2 class="text-gray-400 font-light text-lg">UNIVERSITY</h2>
+                                <p class="font-semibold text-2xl">
+                                    University of Notre Dame wins award for excellence in campus internationalization
+                                </p>
+                            </div>
+                            <div class="lg:hidden flex justify-end">
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Other Articles -->
+                <div class="flex flex-col md:flex-col lg:flex-row gap-8">
+                    <!-- article 2 -->
+                    <article class="lg:w-1/2 gap-4">
+                        <div class="flex justify-between items-start">
+                            <div id="content" class="flex-1">
+                                <h2 class="text-gray-400 font-light text-lg">COLLEGES AND SCHOOLS</h2>
+                                <p class="font-semibold text-2xl">
+                                    Physicist Laura Fields granted a Presidential Early Career Award
+                                </p>
+                            </div>
+                            <div class="lg:hidden">
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- article 3 -->
+                    <article class="lg:w-1/2 gap-4">
+                        <div class="flex justify-between items-start">
+                            <div id="content" class="flex-1">
+                                <h2 class="text-gray-400 font-light text-lg">GLOBAL</h2>
+                                <p class="font-semibold text-2xl">
+                                    University of Notre Dame and Pontificia Universidad Catolica de Chile dual PhD program welcomes all disciplines
+                                </p>
+                            </div>
+                            <div class="lg:hidden">
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- News Section -->
         <section class="p-10">
             <div class="mb-10">
                 <div class="flex flex-col">
                     <h2 class="text-gray-400 font-light text-lg">UNIVERSITY NEWS</h2>
                     <p class="text-3xl font-bold">Notre Dame At Work</p>
-                    <hr class="bg-[#ffd743] p-1 w-20" />
+                    <hr class="bg-[#d39f10] p-1 w-20" />
                     <div class="font-light text-lg">
                         <a href="#viewall" class="flex items-center">
                             View all news 
@@ -140,7 +199,7 @@
           <h2 class="text-gray-400 font-light text-lg">UNIVERSITY EVENTS</h2>
           <p class="text-3xl font-bold">Notre Dame In Motion</p>
           <!-- small line -->
-          <hr class="bg-[#ffd743] p-1" />
+          <hr class="bg-[#d39f10] p-1 w-20" />
           <!-- view all for big screens -->
           <div class="hidden font-light text-lg md:flex">
             <a href="#viewall" class="flex">View all events <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6 translate-x-1 translate-y-1" /></a>
