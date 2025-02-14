@@ -118,7 +118,6 @@
             </div>
         </section>
 
-
         <!-- Second section -->
         <section class="p-10">
             <div class="flex flex-col md:flex-col
@@ -367,9 +366,9 @@
               </div>
               
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
               <!-- Card 1 -->
-              <div class="group hover:bg-gray-100 transition-colors p-4 rounded-lg">
+              <div class="group hover:bg-gray-100 transition-colors p-4 rounded-lg ">
                 <div class="flex flex-col gap-4">
                   <img src="image/card1.png" alt="news1" class="w-full h-48 object-cover">
                   <article>
@@ -424,33 +423,19 @@
           </section>
 
         <!-- Quote Section -->
-<section class="relative py-20 mb-20">
-    <div class="container mx-auto px-4">
-        <!-- Changed to flex-col for mobile/tablet, flex-row for desktop -->
-        <div class="relative flex flex-col lg:flex-row items-center gap-8">
-            <!-- Image - Moved first in order -->
-            <div class="w-full lg:w-3/5 lg:absolute lg:right-0 lg:top-[-40px] z-20">
-                <img src="image/quote.png" alt="quoteimage" class="w-full h-auto shadow-lg">
+        <section id="Quote section" class="grid grid-cols-1 bg-blue-950 gap-8 lg:grid-cols-[55%_45%]">
+            <img class="lg:col-start-2 lg:row-start-1 lg:h-full lg:scale-y-110 object-cover lg:w-[120%] lg:max-h-[476px]"
+              src="image/quote.png">
+            <div class="flex flex-col p-4 lg:p-16 gap-4 my-auto">
+              <blockquote class="text-xl text-white lg:text-3xl lg:leading-relaxed font-serif">
+                “Notre Dame must be the leading global Catholic research university, on par with but distinct from the world's
+                best private universities. This effort to educate students and conduct research at the highest level animated
+                by a distinctive Catholic mission is one of the most exciting and consequential experiments in global higher
+                education.”
+              </blockquote>
+              <cite class="self-end text-white not-italic text-lg">— Notre Dame 2033: A Strategic Framework</cite>
             </div>
-            
-            <!-- Quote Box -->
-            <div class="w-full bg-blue-950 p-8 lg:p-18 relative z-10">
-                <figure>
-                    <blockquote class="relative text-xl lg:text-2xl text-white mb-8">
-                        <span class="absolute top-[-40px] left-[-20px] text-7xl text-white opacity-25 font-serif">"</span>
-                        <p class="relative z-10 max-w-3xl">
-                            Notre Dame must be the leading global Catholic research university, on par with but distinct from the world's best private universities. This effort to educate students and conduct research at the highest level animated by a distinctive Catholic mission is one of the most exciting and consequential experiments in global higher education.
-                        </p>
-                        <span class="absolute bottom-[-60px] right-[-30px] text-7xl text-white opacity-25 font-serif">"</span>
-                    </blockquote>
-                    <figcaption class="text-white mt-10">
-                        &#8212; Notre Dame 2033: A Strategic Framework
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
+          </section>
 
         <!-- Events Section -->
         <section class="bg-white py-16">
