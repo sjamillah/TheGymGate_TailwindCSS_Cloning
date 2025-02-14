@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doc</title>
-</head>
-<body>
-    <p class="font-bold">Hellooooooooo</p>
-</body>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University of Notre Dame</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="icon" href="image/favicon (1).ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="min-h-screen">
+    <header></header>
+
+    <main class="grid grid-cols-1 md:gap-4">
+      <!-- Events Section -->
+      <section class="text-blue-950 p-10">
+        <div class="flex flex-col md:flex">
+          <h2 class="text-gray-400 font-light text-lg">UNIVERSITY EVENTS</h2>
+          <p class="text-3xl font-bold">Notre Dame In Motion</p>
+          <!-- small line -->
+          <hr class="bg-[#ffd743] p-1" />
+          <!-- view all for big screens -->
+          <div class="hidden font-light text-lg md:flex">
+            <a href="#viewall">View all events</a>
+            <img src="image/arrow.png" alt="arrow-icon" class="w-8 h-8" />
+          </div>
+        </div>
+        <!-- article 1 -->
+        <div id="articles" class="grid grid-cols-1 md:grid grid-cols-2 space-y-5">
+          <article class="flex gap-6">
+            <div id="date" class="">
+              <p class="font-light text-xl text-gray-400">FEB</p>
+              <p class="font-bold text-3xl">28</p>
+            </div>
+            <div id="content">
+              <p class="font-semibold text-2xl">
+                Ten Years Hence Lecture: "A Brief History of the Future"
+              </p>
+              <div id="pubdate" class="flex gap-2">
+                <img
+                  src="image/timer.png"
+                  alt="time-icon"
+                  class="w-4 h-4 translate-x-1 translate-y-1"
+                />
+                <p class="font-light">Fri, Feb 28 at 10:40 am</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- article 2 -->
+          <article class="flex gap-6">
+            <div id="date" class="">
+              <p class="font-light text-xl text-gray-400">MAR</p>
+              <p class="font-bold text-3xl">8</p>
+            </div>
+            <div id="content">
+              <p class="font-semibold text-2xl">
+                Spring Break (no classes in session)
+              </p>
+              <div id="pubdate" class="flex gap-2">
+                <img
+                  src="image/timer.png"
+                  alt="time-icon"
+                  class="w-4 h-4 translate-x-1 translate-y-1"
+                />
+                <p class="font-light">Sat, Mar 8</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- article 3 -->
+          <article class="flex gap-6">
+            <div id="date" class="">
+              <p class="font-light text-xl text-gray-400">MAR</p>
+              <p class="font-bold text-3xl">19</p>
+            </div>
+            <div id="content">
+              <p class="font-semibold text-2xl">
+                Lecture by Doug Marsh: "Reflections on Building the University
+                of Notre Dame Campus"
+              </p>
+              <div id="pubdate" class="flex gap-2">
+                <img
+                  src="image/timer.png"
+                  alt="time-icon"
+                  class="w-4 h-4 translate-x-1 translate-y-1"
+                />
+                <p class="font-light">Wed, Mar 19 at 5:30 pm</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- article 4 -->
+          <article class="flex gap-6">
+            <div id="date" class="">
+              <p class="font-light text-xl text-gray-400">MAR</p>
+              <p class="font-bold text-3xl">20</p>
+            </div>
+            <div id="content">
+              <p class="font-semibold text-2xl">
+                The 26th Annual Dialogues on Nonviolence, Religion, and Peace
+                featuring the Honorable Emilce Cuda
+              </p>
+              <div id="pubdate" class="flex gap-2">
+                <img
+                  src="image/timer.png"
+                  alt="time-icon"
+                  class="w-4 h-4 translate-x-1 translate-y-1"
+                />
+                <p class="font-light">Thu, Mar 20 at 11:00 am</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- view all for the smaller screens-->
+        <div class="md:hidden font-light text-lg flex flex-col">
+          <a href="#viewall">View all events</a>
+          <img src="image/arrow.png" alt="arrow-icon" class="w-8 h-8" />
+        </div>
+      </section>
+
+      <!-- School content section -->
+       <section class="flex flex-col md:flex bg-blue-950 p-10 text-center text-white font-normal text-lg gap-2">
+        <a href="#bookstore">Bookstore</a>
+        <a href="#employment">Employment</a>
+        <a href="#tour">Tour</a>
+        <a href="#insidend">InsideND</a>
+        <a href="#calendar">Academic Calendar</a>
+       </section>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
