@@ -19,122 +19,120 @@
 
     <main class="grid grid-cols-1 md:gap-4">
         <!-- News Section -->
-         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-9 cursor-pointer">
-            <div class="flex flex-col md:flex">
-                <h2 class="text-gray-400 font-light text-lg">UNIVERSITY NEWS</h2>
-                <p class="text-3xl font-bold">Notre Dame At Work</p>
-                <!-- small line -->
-                <hr class="bg-[#ffd743] p-1" />
-                <!-- view all for big screens -->
-                <div class="font-light text-lg text-sm md:flex">
-                    <a href="#viewall" class="flex">View all news <img src="image/arrow.png" alt="arrow-icon" class="w-4 h-4 translate-x-1 translate-y-1" /></a>
+        <section class="p-10">
+            <div class="mb-10">
+                <div class="flex flex-col">
+                    <h2 class="text-gray-400 font-light text-lg">UNIVERSITY NEWS</h2>
+                    <p class="text-3xl font-bold">Notre Dame At Work</p>
+                    <hr class="bg-[#ffd743] p-1 w-20" />
+                    <div class="font-light text-lg">
+                        <a href="#viewall" class="flex items-center">
+                            View all news 
+                            <img src="image/arrow.png" alt="arrow-icon" class="w-4 h-4 ml-2" />
+                        </a>
+                    </div>
                 </div>
-              </div>
-              <!-- Image 1 and article 1-->
-               <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                <img src="image/news1.png" alt="news1">
-                
-                  <article class="flex flex-col gap-6">
-                    <div class="flex justify-between items-center gap-4">
-                        <div id="content">
-                            <h2 class="text-gray-400 font-light text-lg">INTERNATIONAL</h2>
-                            <p class="font-semibold text-2xl">
-                                University of Notre Dame wins award for excellence in campus internationalization
-                            </p>
-                        </div>
-                        <!-- arrow for smaller screens -->
-                        <div class="lg:hidden">
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-20" />
-                        </div>
-                    </div>
-                    
-                    <!-- arrow for large screens -->
-                    <div class="hidden lg:flex items-center">
-                        <a href="#read" class="flex items-center gap-2">
-                            Read Article
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
-                        </a>
-                    </div>
-                </article>
+            </div>
 
-               </div>
-              <!-- Image 2 and article 2-->
-              <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                <img src="image/news2.png" alt="news1">
+            <!-- News Grid -->
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Image 1 and article 1 -->
+                <div class="flex lg:flex-row gap-2">
+                    <div class="lg:w-1/2 z-3">
+                        <img src="image/news1.png" alt="news1" class="w-70">
+                    </div>
+                    <article class="lg:w-1/2">
+                        <div class="flex flex-col gap-4 bg-blue-200 p-20">
+                            <div id="content">
+                                <h2 class="text-gray-400 font-light text-lg">INTERNATIONAL</h2>
+                                <p class="font-semibold text-2xl">
+                                    University of Notre Dame wins award for excellence in campus internationalization
+                                </p>
+                            </div>
+                            <div class="lg:hidden flex justify-end">
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </div>
+                            <div class="hidden lg:flex items-center">
+                                <a href="#read" class="flex items-center gap-2">
+                                    Read Article
+                                    <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-                  <article class="flex flex-col gap-6">
-                    <div class="flex justify-between items-center gap-4">
-                        <div id="content">
-                            <h2 class="text-gray-400 font-light text-lg">LATEST NEWS</h2>
-                            <p class="font-semibold text-2xl">
-                                ND Ethics Week explores business and sustainability
-                            </p>
-                        </div>
-                        <!-- arrow for smaller screens -->
-                        <div class="lg:hidden">
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-20" />
-                        </div>
+                <!-- Image 2 and article 2 -->
+                <div class="flex lg:flex-row lg:justify-end gap-2 lg:ml-auto lg:w-3/4">
+                    <div class="lg:w-1/2">
+                        <img src="image/news2.png" alt="news2" class="w-60 h-30">
                     </div>
-                    
-                    <!-- arrow for large screens -->
-                    <div class="hidden lg:flex items-center">
-                        <a href="#read" class="flex items-center gap-2">
-                            Read Article
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
-                        </a>
-                    </div>
-                </article>
-               </div>
+                    <article class="lg:w-1/2">
+                        <div class="flex flex-col gap-4">
+                            <div id="content">
+                                <h2 class="text-gray-400 font-light text-lg">LATEST NEWS</h2>
+                                <p class="font-semibold text-2xl">
+                                    ND Ethics Week explores business and sustainability
+                                </p>
+                            </div>
+                            <div class="lg:hidden flex justify-end">
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </div>
+                            <div class="hidden lg:flex items-center">
+                                <a href="#read" class="flex items-center gap-2">
+                                    Read Article
+                                    <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-      
-                <!-- article 3 -->          
-                  <article class="flex flex-col gap-6">
-                    <div class="flex justify-between items-center gap-4">
-                        <div id="content">
-                            <h2 class="text-gray-400 font-light text-lg">COMMUNITY NEWS</h2>
-                            <p class="font-semibold text-2xl">
-                                Notre Dame partners with community organizations for Walk the Walk Week service project
-                            </p>
+                <div class="lg:w-1/2 space-y-8">
+                    <!-- article 3 -->
+                    <article class="flex flex-col gap-4">
+                        <div class="flex justify-between items-start">
+                            <div id="content">
+                                <h2 class="text-gray-400 font-light text-lg">COMMUNITY NEWS</h2>
+                                <p class="font-semibold text-2xl">
+                                    Notre Dame partners with community organizations for Walk the Walk Week service project
+                                </p>
+                            </div>
+                            <div class="lg:hidden">
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </div>
                         </div>
-                        <!-- arrow for smaller screens -->
-                        <div class="lg:hidden">
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-20" />
+                        <div class="hidden lg:flex items-center">
+                            <a href="#read" class="flex items-center gap-2">
+                                Read Article
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </a>
                         </div>
-                    </div>
-                    
-                    <!-- arrow for large screens -->
-                    <div class="hidden lg:flex items-center">
-                        <a href="#read" class="flex items-center gap-2">
-                            Read Article
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
-                        </a>
-                    </div>
-                </article>
+                    </article>
 
-                  <!-- article 4 -->
-                  <article class="flex flex-col gap-6">
-                    <div class="flex justify-between items-center gap-4">
-                        <div id="content">
-                            <h2 class="text-gray-400 font-light text-lg">FACULTY AND STAFF</h2>
-                            <p class="font-semibold text-2xl">
-                                Physicist Laura Fields granted a Presidential Early Career Award
-                            </p>
+                    <!-- article 4 -->
+                    <article class="flex flex-col gap-4">
+                        <div class="flex justify-between items-start">
+                            <div id="content">
+                                <h2 class="text-gray-400 font-light text-lg">FACULTY AND STAFF</h2>
+                                <p class="font-semibold text-2xl">
+                                    Physicist Laura Fields granted a Presidential Early Career Award
+                                </p>
+                            </div>
+                            <div class="lg:hidden">
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </div>
                         </div>
-                        <!-- arrow for smaller screens -->
-                        <div class="lg:hidden">
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-20" />
+                        <div class="hidden lg:flex items-center">
+                            <a href="#read" class="flex items-center gap-2">
+                                Read Article
+                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
+                            </a>
                         </div>
-                    </div>
-                    
-                    <!-- arrow for large screens -->
-                    <div class="hidden lg:flex items-center">
-                        <a href="#read" class="flex items-center gap-2">
-                            Read Article
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
-                        </a>
-                    </div>
-                </article>
-         </section>
+                    </article>
+                </div>
+            </div>
+        </section>
 
       <!-- Events Section -->
       <section class="p-10">
