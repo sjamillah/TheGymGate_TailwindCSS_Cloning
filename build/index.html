@@ -14,14 +14,77 @@
     />
   </head>
 
-  <body class="min-h-screen text-blue-950">
-    <header>
-        <!-- Navigation -->
-         <section>
-            <div>
-                
+  <body class="h-screen text-blue-950">
+    <!-- Navigation section-->
+    <header class="fixed w-full z-50">
+        <!-- Top Bar - Hidden on Scroll -->
+        <div class="transition-all duration-300 h-24 group-scroll-0:h-0 bg-blue-950">
+            <div class="container mx-auto px-4 h-full">
+                <div class="flex justify-between items-center h-full">
+                    <!-- Logo -->
+                    <a href="/" class="flex items-center">
+                        <img src="image/logo2.png" alt="University of Notre Dame" class="h-16">
+                    </a>
+
+                    <!-- Top Navigation -->
+                    <nav class="hidden lg:flex items-center gap-8 text-white">
+                        <a href="/about" class="hover:text-gray-300">About</a>
+                        <a href="/visit" class="hover:text-gray-300">Visit</a>
+                        <div class="flex items-center gap-8">
+                            <a href="/give" class="hover:text-gray-300 inline-flex items-center gap-1">
+                                Give
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                            <a href="/alumni" class="hover:text-gray-300 inline-flex items-center gap-1">
+                                Alumni
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                            <a href="/athletics" class="hover:text-gray-300 inline-flex items-center gap-1">
+                                Athletics
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
             </div>
-         </section>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <div class="bg-white shadow-md">
+            <div class="container mx-auto px-4">
+                <nav class="h-16 flex items-center justify-between">
+                    <!-- Home Icon -->
+                    <a href="/" class="text-blue-950">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </a>
+
+                    <!-- Main Navigation Links -->
+                    <div class="flex items-center gap-8">
+                        <a href="/academics" class="text-gray-700 hover:text-blue-950">Academics</a>
+                        <a href="/admissions" class="text-gray-700 hover:text-blue-950">Admissions</a>
+                        <a href="/research" class="text-gray-700 hover:text-blue-950">Research</a>
+                        <a href="/global" class="text-gray-700 hover:text-blue-950">Global</a>
+                        <a href="/faith-service" class="text-gray-700 hover:text-blue-950">Faith & Service</a>
+                        <a href="/campus-life" class="text-gray-700 hover:text-blue-950">Campus Life</a>
+                    </div>
+
+                    <!-- Search Button -->
+                    <button class="text-gray-700 hover:text-blue-950">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main class="grid grid-cols-1 md:gap-4">
@@ -32,11 +95,11 @@
             </div>
             
             <div class="absolute inset-0 bg-blue-950/70 flex flex-col items-center justify-center md:flex-col md:justify-end md:align-end gap-7">
-                <div class="container mx-auto h-full px-4 md:px-8">
+                <div class="container mx-auto h-full my-30">
                     <div class="flex flex-col lg:flex-col items-center justify-center w-full h-full">
                         <!-- Image Section -->
                         <div class="lg:w-1/2 flex justify-center md:justify-end md:align-end w-1/2">
-                            <img src="image/would.png" alt="image" class="w-1/2">
+                            <img src="image/would.png" alt="image" class="w-1/3 mt-5">
                         </div>
 
                         <!-- Text Content Section -->
@@ -289,207 +352,202 @@
 
         <!-- Stories section -->
         <section class="p-10 mb-40">
-            <div class="mb-10">
+            <div class="mb-10 flex flex-col md:flex-row">
                 <div class="flex flex-col">
-                    <h2 class="text-gray-400 font-light text-lg">UNIVERSITY STORIES</h2>
-                    <p class="text-3xl font-bold">Notre Dame In Focus</p>
-                    <hr class="bg-[#d39f10] p-1 w-20" />
-                    <div class="font-light text-lg">
-                        <a href="#viewall" class="flex items-center">
-                            View all stories 
-                            <img src="image/arrow.png" alt="arrow-icon" class="w-4 h-4 ml-2" />
-                        </a>
+                  <h2 class="text-gray-400 font-light text-lg">UNIVERSITY STORIES</h2>
+                  <p class="text-3xl font-bold">Notre Dame In Focus</p>
+                  <hr class="bg-[#d39f10] p-1 w-20" />
+                  <div class="font-light text-lg">
+                    <a href="#viewall" class="flex items-center hover:text-[#d39f10] transition-colors">
+                      View all stories
+                      <img src="image/arrow.png" alt="arrow-icon" class="w-4 h-4 ml-2" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Card 1 -->
+              <div class="group hover:bg-gray-100 transition-colors p-4 rounded-lg">
+                <div class="flex flex-col gap-4">
+                  <img src="image/card1.png" alt="news1" class="w-full h-48 object-cover">
+                  <article>
+                    <div class="flex flex-col gap-4">
+                      <div id="content">
+                        <h2 class="text-gray-400 font-light text-lg">GLOBAL</h2>
+                        <p class="font-semibold text-2xl group-hover:text-blue-950 transition-colors">
+                          Empowering through education
+                        </p>
+                        <p class="font-light text-lg">A pathway out of poverty for children in India</p>
+                      </div>
                     </div>
+                  </article>
                 </div>
+              </div>
+      
+              <!-- Card 2 -->
+              <div class="group hover:bg-gray-100 transition-colors p-4 rounded-lg">
+                <div class="flex flex-col gap-4">
+                  <img src="image/card2.png" alt="news2" class="w-full h-48 object-cover">
+                  <article>
+                    <div class="flex flex-col gap-4">
+                      <div id="content">
+                        <h2 class="text-gray-400 font-light text-lg">COMMUNITY</h2>
+                        <p class="font-semibold text-2xl group-hover:text-blue-950 transition-colors">
+                          Habitat partnership bears fruit for homebuyers in South Bend
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+      
+              <!-- Card 3 -->
+              <div class="group hover:bg-gray-100 transition-colors p-4 rounded-lg">
+                <div class="flex flex-col gap-4">
+                  <img src="image/card3.png" alt="news3" class="w-full h-48 object-cover">
+                  <article>
+                    <div class="flex flex-col gap-4">
+                      <div id="content">
+                        <h2 class="text-gray-400 font-light text-lg">UNIVERSITY</h2>
+                        <p class="font-semibold text-2xl group-hover:text-blue-950 transition-colors">
+                          Reasons to serve
+                        </p>
+                        <p class="font-light text-lg">History, West Point, and 9/11 memorial inspire ND students in New York</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
+          </section>
 
-            <div class="flex flex-col lg:flex-row gap-8">
-                <!-- Card 1 -->
-                <div class="flex flex-col md:flex-row lg:flex-col gap-8">
-                    <img src="image/card1.png" alt="news1" class="w-full md:w-60 h-auto">
-                    <article class="flex-1">
-                        <div class="flex flex-col gap-4">
-                            <div id="content">
-                                <h2 class="text-gray-400 font-light text-lg">GLOBAL</h2>
-                                <p class="font-semibold text-2xl">
-                                    Empowering through education
-                                </p>
-                                <p class="font-light text-lg">A pathway out of poverty for children in India</p>
-                            </div>
-                            <div class="lg:hidden flex justify-end">
-                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="flex flex-col md:flex-row lg:flex-col gap-8">
-                    <img src="image/card2.png" alt="news2" class="w-full md:w-60 h-auto">
-                    <article class="flex-1">
-                        <div class="flex flex-col gap-4">
-                            <div id="content">
-                                <h2 class="text-gray-400 font-light text-lg">COMMUNITY</h2>
-                                <p class="font-semibold text-2xl">
-                                    Habitat partnership bears fruit <br>for homebuyers in South Bend
-                                </p>
-                            </div>
-                            <div class="lg:hidden flex justify-end">
-                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="flex flex-col md:flex-row lg:flex-col gap-8">
-                    <img src="image/card3.png" alt="news3" class="w-full md:w-60 h-auto">
-                    <article class="flex-1">
-                        <div class="flex flex-col gap-4">
-                            <div id="content">
-                                <h2 class="text-gray-400 font-light text-lg">UNIVERSITY</h2>
-                                <p class="font-semibold text-2xl">
-                                    Reasons to serve
-                                </p>
-                                <p class="font-light text-lg">History, West Point, and 9/11 memorial inspire ND students in New York</p>
-                            </div>
-                            <div class="lg:hidden flex justify-end">
-                                <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6" />
-                            </div>
-                        </div>
-                    </article>
-                </div>
+        <!-- Quote Section -->
+<section class="relative py-20 mb-20">
+    <div class="container mx-auto px-4">
+        <!-- Changed to flex-col for mobile/tablet, flex-row for desktop -->
+        <div class="relative flex flex-col lg:flex-row items-center gap-8">
+            <!-- Image - Moved first in order -->
+            <div class="w-full lg:w-3/5 lg:absolute lg:right-0 lg:top-[-40px] z-20">
+                <img src="image/quote.png" alt="quoteimage" class="w-full h-auto shadow-lg">
             </div>
-        </section>
-
-        <!-- Quotes Section -->
-        <section class="relative">
-            <div class="relative flex flex-col lg:flex-row justify-end">
-                <!-- Image -->
-                <div class="lg:absolute lg:right-0 lg:top-[-40px] lg:w-1/2 z-10">
-                    <img src="image/quote.png" alt="quoteimage" class="w-full">
-                </div>
-                
-                <!-- Quote Box -->
-                <figure class="bg-blue-950 p-14 lg:w-full relative">
-                    <blockquote class="relative text-2xl sm:text-3xl text-white mb-2">
+            
+            <!-- Quote Box -->
+            <div class="w-full bg-blue-950 p-8 lg:p-18 relative z-10">
+                <figure>
+                    <blockquote class="relative text-xl lg:text-2xl text-white mb-8">
                         <span class="absolute top-[-40px] left-[-20px] text-7xl text-white opacity-25 font-serif">"</span>
-                        <p class="relative z-10 wrap">
+                        <p class="relative z-10 max-w-3xl">
                             Notre Dame must be the leading global Catholic research university, on par with but distinct from the world's best private universities. This effort to educate students and conduct research at the highest level animated by a distinctive Catholic mission is one of the most exciting and consequential experiments in global higher education.
                         </p>
                         <span class="absolute bottom-[-60px] right-[-30px] text-7xl text-white opacity-25 font-serif">"</span>
                     </blockquote>
-                    <figcaption class="text-white text-right mt-10 text-left">
+                    <figcaption class="text-white mt-10">
                         &#8212; Notre Dame 2033: A Strategic Framework
                     </figcaption>
                 </figure>
             </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Events Section -->
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <!-- Header -->
+                <div class="flex flex-col mb-12">
+                    <h2 class="text-gray-400 font-light text-lg">UNIVERSITY EVENTS</h2>
+                    <p class="text-3xl font-bold">Notre Dame In Motion</p>
+                    <hr class="bg-[#d39f10] p-1 w-20 my-4" />
+                    <div class="hidden md:block font-light text-lg">
+                        <a href="#viewall" class="flex items-center hover:text-[#d39f10] transition-colors">
+                            View all events 
+                            <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6 ml-2" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Events Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Event 1 -->
+                    <article class="flex gap-6 hover:bg-gray-100 p-4 rounded-lg transition-colors">
+                        <div class="flex-shrink-0">
+                            <p class="font-light text-xl text-gray-400">FEB</p>
+                            <p class="font-bold text-3xl">28</p>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="font-semibold text-2xl mb-3">
+                                Ten Years Hence Lecture: "A Brief History of the Future"
+                            </p>
+                            <div class="flex items-center gap-2">
+                                <img src="image/timer.png" alt="time-icon" class="w-4 h-4" />
+                                <p class="font-light">Fri, Feb 28 at 10:40 am</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 2 -->
+                    <article class="flex gap-6 hover:bg-gray-100 p-4 rounded-lg transition-colors">
+                        <div class="flex-shrink-0">
+                            <p class="font-light text-xl text-gray-400">MAR</p>
+                            <p class="font-bold text-3xl">8</p>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="font-semibold text-2xl mb-3">
+                                Spring Break (no classes in session)
+                            </p>
+                            <div class="flex items-center gap-2">
+                                <img src="image/timer.png" alt="time-icon" class="w-4 h-4" />
+                                <p class="font-light">Sat, Mar 8</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 3 -->
+                    <article class="flex gap-6 hover:bg-gray-100 p-4 rounded-lg transition-colors">
+                        <div class="flex-shrink-0">
+                            <p class="font-light text-xl text-gray-400">MAR</p>
+                            <p class="font-bold text-3xl">19</p>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="font-semibold text-2xl mb-3">
+                                Lecture by Doug Marsh: "Reflections on Building the University of Notre Dame Campus"
+                            </p>
+                            <div class="flex items-center gap-2">
+                                <img src="image/timer.png" alt="time-icon" class="w-4 h-4" />
+                                <p class="font-light">Wed, Mar 19 at 5:30 pm</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Event 4 -->
+                    <article class="flex gap-6 hover:bg-gray-100 p-4 rounded-lg transition-colors">
+                        <div class="flex-shrink-0">
+                            <p class="font-light text-xl text-gray-400">MAR</p>
+                            <p class="font-bold text-3xl">20</p>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="font-semibold text-2xl mb-3">
+                                The 26th Annual Dialogues on Nonviolence, Religion, and Peace featuring the Honorable Emilce Cuda
+                            </p>
+                            <div class="flex items-center gap-2">
+                                <img src="image/timer.png" alt="time-icon" class="w-4 h-4" />
+                                <p class="font-light">Thu, Mar 20 at 11:00 am</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Mobile View All Link -->
+                <div class="md:hidden mt-8">
+                    <a href="#viewall" class="flex items-center font-light text-lg hover:text-[#d39f10] transition-colors">
+                        View all events 
+                        <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6 ml-2" />
+                    </a>
+                </div>
+            </div>
         </section>
-
-      <!-- Events Section -->
-      <section class="p-10">
-        <div class="flex flex-col md:flex">
-          <h2 class="text-gray-400 font-light text-lg">UNIVERSITY EVENTS</h2>
-          <p class="text-3xl font-bold">Notre Dame In Motion</p>
-          <!-- small line -->
-          <hr class="bg-[#d39f10] p-1 w-20" />
-          <!-- view all for big screens -->
-          <div class="hidden font-light text-lg md:flex">
-            <a href="#viewall" class="flex">View all events <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6 translate-x-1 translate-y-1" /></a>
-          </div>
-        </div>
-        <!-- article 1 -->
-        <div id="articles" class="grid grid-cols-1 md:grid grid-cols-2 space-y-5 gap-7">
-          <article class="flex gap-6">
-            <div id="date" class="">
-              <p class="font-light text-xl text-gray-400">FEB</p>
-              <p class="font-bold text-3xl">28</p>
-            </div>
-            <div id="content">
-              <p class="font-semibold text-2xl">
-                Ten Years Hence Lecture: "A Brief History of the Future"
-              </p>
-              <div id="pubdate" class="flex gap-2">
-                <img
-                  src="image/timer.png"
-                  alt="time-icon"
-                  class="w-4 h-4 translate-x-1 translate-y-1"
-                />
-                <p class="font-light">Fri, Feb 28 at 10:40 am</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- article 2 -->
-          <article class="flex gap-6">
-            <div id="date" class="">
-              <p class="font-light text-xl text-gray-400">MAR</p>
-              <p class="font-bold text-3xl">8</p>
-            </div>
-            <div id="content">
-              <p class="font-semibold text-2xl">
-                Spring Break (no classes in session)
-              </p>
-              <div id="pubdate" class="flex gap-2">
-                <img
-                  src="image/timer.png"
-                  alt="time-icon"
-                  class="w-4 h-4 translate-x-1 translate-y-1"
-                />
-                <p class="font-light">Sat, Mar 8</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- article 3 -->
-          <article class="flex gap-6">
-            <div id="date" class="">
-              <p class="font-light text-xl text-gray-400">MAR</p>
-              <p class="font-bold text-3xl">19</p>
-            </div>
-            <div id="content">
-              <p class="font-semibold text-2xl">
-                Lecture by Doug Marsh: "Reflections on Building the University
-                of Notre Dame Campus"
-              </p>
-              <div id="pubdate" class="flex gap-2">
-                <img
-                  src="image/timer.png"
-                  alt="time-icon"
-                  class="w-4 h-4 translate-x-1 translate-y-1"
-                />
-                <p class="font-light">Wed, Mar 19 at 5:30 pm</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- article 4 -->
-          <article class="flex gap-6">
-            <div id="date" class="">
-              <p class="font-light text-xl text-gray-400">MAR</p>
-              <p class="font-bold text-3xl">20</p>
-            </div>
-            <div id="content">
-              <p class="font-semibold text-2xl">
-                The 26th Annual Dialogues on Nonviolence, Religion, and Peace
-                featuring the Honorable Emilce Cuda
-              </p>
-              <div id="pubdate" class="flex gap-2">
-                <img
-                  src="image/timer.png"
-                  alt="time-icon"
-                  class="w-4 h-4 translate-x-1 translate-y-1"
-                />
-                <p class="font-light">Thu, Mar 20 at 11:00 am</p>
-              </div>
-            </div>
-          </article>
-        </div>
-        <!-- view all for the smaller screens-->
-        <div class="md:hidden font-light text-lg flex flex-col">
-            <a href="#viewall" class="flex">View all events <img src="image/arrow.png" alt="arrow-icon" class="w-6 h-6 translate-x-1 translate-y-1" /></a>
-        </div>
-      </section>
 
       <!-- School content section -->
        <section class="flex flex-col md:flex-row bg-blue-950 p-12 text-center text-white font-normal text-lg gap-6 md:align-center md:justify-center lg:align-start lg:justify-start lg:right-5">
@@ -505,36 +563,47 @@
     <footer class="relative">
         <!-- Contact section -->
         <section class="p-10 font-normal text-gray-500">
-            <div class="flex flex-col md:flex-row lg:flex-row gap-5 md:justify-between">
-                <img src="image/logo.png" alt="logo" class="w-1/3 h-1/3">
-                <div id="contact" class="flex flex-col md:flex lg:flex gap-2 font-light text-lg">
-                        <a href="#facebook" class="flex gap-3">
-                            <img src="image/facebook.png" alt="fb-icon" class="w-4 h-4 translate-x-2 translate-y-1.5">Facebook
-                        </a>
-                    <a href="#X/Twitter" class="flex gap-3">
-                        <img src="image/twitter.png" alt="fb-icon" class="w-4 h-4 translate-x-2 translate-y-1.5">X/Twitter
-                    </a>
-                    <a href="#instagram" class="flex gap-3">
-                        <img src="image/instagram.png" alt="fb-icon" class="w-4 h-4 translate-x-2 translate-y-1.5">Instagram
-                    </a>
-                    <a href="#youTube" class="flex gap-3">
-                        <img src="image/youtube.png" alt="fb-icon" class="w-4 h-4 translate-x-2 translate-y-1.5">You Tube
-                    </a>
-                    <a href="#LinkedIn" class="flex gap-3">
-                        <img src="image/linkedin.png" alt="fb-icon" class="w-4 h-4 translate-x-2 translate-y-1.5">LinkedIn
-                    </a>
-                </div>
-                <div class="flex flex-col">
-                    <p>&copy; 2025 University of Notre Dame</p>
-                    <address>
-                        Notre Dame, <span>IN</span> 46556 USA
-                        Phone: <span>(574) 631-5000</span>
-                        <span>Contact</span>
-                    </address>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Logo -->
+              <div class="flex justify-center lg:justify-start">
+                <img src="image/logo.png" alt="logo" class="w-48">
+              </div>
+    
+              <!-- Social Media Links -->
+              <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-2 md:justify-center">
+                <a href="#facebook" class="flex items-center gap-2 hover:text-blue-950 transition-colors">
+                  <img src="image/facebook.png" alt="fb-icon" class="w-4 h-4">
+                  <span>Facebook</span>
+                </a>
+                <a href="#X/Twitter" class="flex items-center gap-2 hover:text-blue-950 transition-colors">
+                  <img src="image/twitter.png" alt="twitter-icon" class="w-4 h-4">
+                  <span>X/Twitter</span>
+                </a>
+                <a href="#instagram" class="flex items-center gap-2 hover:text-blue-950 transition-colors">
+                  <img src="image/instagram.png" alt="instagram-icon" class="w-4 h-4">
+                  <span>Instagram</span>
+                </a>
+                <a href="#youTube" class="flex items-center gap-2 hover:text-blue-950 transition-colors">
+                  <img src="image/youtube.png" alt="youtube-icon" class="w-4 h-4">
+                  <span>YouTube</span>
+                </a>
+                <a href="#LinkedIn" class="flex items-center gap-2 hover:text-blue-950 transition-colors">
+                  <img src="image/linkedin.png" alt="linkedin-icon" class="w-4 h-4">
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+    
+              <!-- Contact Information -->
+              <div class="text-center lg:text-right">
+                <p>&copy; 2025 University of Notre Dame</p>
+                <address class="not-italic">
+                  Notre Dame, <span>IN</span> 46556 USA<br>
+                  Phone: <span class="hover:text-blue-950 transition-colors">(574) 631-5000</span><br>
+                  <span class="hover:text-blue-950 transition-colors cursor-pointer">Contact</span>
+                </address>
+              </div>
             </div>
-        </div>
-    </section>
+          </section>
 
             <!-- Last part -->
             <section class="bg-gray-200 p-3 text-gray-400 w-full">
